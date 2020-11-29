@@ -1,4 +1,4 @@
-### Brayan Mauricio Vega Ortega
-### B47519
-### IE0405 - Modelos Probabilísticos de Señales y Sistemas
-## Proyecto4
+## Brayan Mauricio Vega Ortega
+## B47519
+## IE0405 - Modelos Probabilísticos de Señales y Sistemas
+### Proyecto 4
