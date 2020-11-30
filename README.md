@@ -4,11 +4,11 @@
 
 Para la solución de este proyecto se divide en tres partes de acuerdo a lo solicitado.
 La primera parte se compone de una simulación del sistema de comunicación utilizando una modulación QPSK, para enviar y recibir una imagen determinada. Como primer paso se implementan las funciones que fueron definidas en las secciones anteriores de este proyecto y fueron estas:
- 1.   fuente_info(imagen), encargada de "leer" la imagen y retorna un vector de pixeles para el caso de una imagen en formato JPG
- 2.   rgb_a_bit(vector_pixel), convierte los pixeles de base decimal (de 0 a 255) a binaria (de 00000000 a 11111111)
- 3.   modulador(bits_Rx, FS, MPP), se utiliza la función que simula el esquema de       
+ 1. fuente_info(imagen), encargada de "leer" la imagen y retorna un vector de pixeles para el caso de una imagen en formato JPG
+ 2. rgb_a_bit(vector_pixel), convierte los pixeles de base decimal (de 0 a 255) a binaria (de 00000000 a 11111111)
+ 3. modulador(bits_Rx, FS, MPP), se utiliza la función que simula el esquema de       
     modulación BPSK como base, pero se realizan los ajustes necesarios para la implementación de la modulación QPSK:
-      a. En el apartado #2 Construyendo un periodo de la señal portadora, se agrega un if para seleccionar el caso donde si x == 1 seleccione una de las dos                    portadoras que corresponden para la modulación por QPSK.
+   a. En el apartado #2 Construyendo un periodo de la señal portadora, se agrega un if para seleccionar el caso donde si x == 1 seleccione una de las dos                    portadoras que corresponden para la modulación por QPSK.
  4. canal_ruidoso(senal_Tx, Pm, SNR): Simula un canala ruidoso con AWGN para senal_Tx.
  5. demodulador(senal_Rx, carrier, MPP): Demodula a senal_Rx (señal recibida) y determina los bits recibidos usando el criterio de demodulación por detección de energía.
  6. bits_a_rgb(bits_Rx, dims): Reconstruye los bits recibidos en bits_Rx en una imagen.
